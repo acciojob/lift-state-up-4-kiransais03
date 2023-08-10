@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import Child from "./Child";
 
 const Parent = ()=>{
-    let [cartitems,setCartitems] = useState([{item:"Item 1",price:"$10"},{item:"Item 2",price:"$20"},{item:"Item 3",price:"$30"}]);
+    let [cartitems,setCartitems] = useState([{item:"Item 1",price:"10"},{item:"Item 2",price:"20"},{item:"Item 3",price:"30"},{item:"Item 4",price:"40"}]);
     console.log(cartitems)
     let [ipdata,setIpdata]=useState({item:"",price:""});
     function submitfunc(e) {
