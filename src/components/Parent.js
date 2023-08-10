@@ -14,9 +14,9 @@ const Parent = ()=>{
     <h1>Parent Component</h1>
     <form onSubmit={submitfunc}>
         <label htmlFor="itemName">Item Name</label>
-        <input type="text" value={ipdata.item} onChange={(e)=>{setIpdata({...ipdata,item:e.target.value})}}/>
+        <input type="text" id="itemName" value={ipdata.item} onChange={(e)=>{setIpdata({...ipdata,item:e.target.value})}}/>
         <label htmlFor="itemPrice">Item Price</label>
-        <input type="number" value={ipdata.price} onChange={(e)=>{setIpdata({...ipdata,price:e.target.value})}}/>
+        <input type="number" id="itemPrice" value={ipdata.price} onChange={(e)=>{setIpdata({...ipdata,price:e.target.value})}}/>
         <button type="submit">Add Item</button>
     </form>
     <Child cartitems={cartitems} setCartitems={setCartitems}/>
